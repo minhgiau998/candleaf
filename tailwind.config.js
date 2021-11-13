@@ -289,6 +289,7 @@ module.exports = {
       ],
       // custom font family
       roboto: ["'Roboto', sans-serif"],
+      poppins: ["'Poppins', sans-serif"],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
