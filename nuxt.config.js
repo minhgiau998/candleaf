@@ -33,6 +33,10 @@ export default {
       path: '~/components/shared/',
       prefix: 'base',
     },
+    {
+      path: '~/components/home/',
+      prefix: 'home',
+    },
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
