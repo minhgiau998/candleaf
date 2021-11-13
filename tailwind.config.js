@@ -305,6 +305,7 @@ module.exports = {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
       // custom font size
+      '16px-18px': ['16px', { lineHeight: '18px' }],
       '24px-28px': ['24px', { lineHeight: '28px' }],
     },
     fontWeight: {

@@ -1,33 +1,58 @@
 <template>
-  <div>
-    <div
-      class="flex flex-row items-center justify-between border-solid  border-b-1 p-30px border-mercury"
-    >
-      <button @click="this.open" class="block md:hidden">
-        <div class="hamburger" :class="['hamburger', this.active]">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+  <div class="fixed w-full">
+    <!-- Base Navigation Bar For Mobile -->
+    <div class="block md:hidden">
+      <div
+        class="flex flex-row items-center justify-between border-solid  border-b-1 p-30px border-mercury"
+      >
+        <button @click="this.open">
+          <div class="hamburger" :class="['hamburger', this.active]">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
+        <a href=".">
+          <img src="~/assets/images/logo.png" alt="Candleaf" />
+        </a>
+        <div class="flex flex-row items-center space-x-15px">
+          <img src="~assets/svg/user.svg" />
+          <img src="~assets/svg/cart.svg" />
         </div>
-      </button>
-      <a href=".">
-        <img src="~/assets/images/logo.png" alt="Candleaf" />
-      </a>
-      <div class="flex flex-row items-center space-x-15px">
-        <img src="~assets/svg/user.svg" />
-        <img src="~assets/svg/cart.svg" />
+      </div>
+      <transition name="slide">
+        <div
+          id="menu"
+          v-if="this.isOpened"
+          class="flex flex-col py-5 space-y-5 font-normal border-solid  px-30px font-roboto text-24px-28px text-mine-shaft border-b-1 border-mercury"
+        >
+          <nuxt-link v-for="menu in menus" :key="menu.title" :to="menu.link">
+            {{ menu.title }}
+          </nuxt-link>
+        </div>
+      </transition>
+    </div>
+    <!-- Base Navigation Bar For Desktop -->
+    <div class="hidden border-solid md:block border-mercury border-b-1">
+      <div
+        class="flex flex-row items-center justify-between mx-auto my-0  p-30px max-w-7xl"
+      >
+        <a href=".">
+          <img src="~/assets/images/logo.png" alt="Candleaf" />
+        </a>
+        <div
+          class="flex flex-row items-center font-medium  space-x-9 font-roboto text-16px-18px text-mine-shaft"
+        >
+          <nuxt-link v-for="menu in menus" :key="menu.title" :to="menu.link">
+            {{ menu.title }}
+          </nuxt-link>
+        </div>
+        <div class="flex flex-row items-center space-x-15px">
+          <img src="~assets/svg/user.svg" />
+          <img src="~assets/svg/cart.svg" />
+        </div>
       </div>
     </div>
-    <transition name="slide">
-      <div
-        v-if="this.isOpened"
-        class="flex flex-col py-5 space-y-5 font-normal border-solid  px-30px font-roboto text-24px-28px text-mine-shaft border-b-1 border-mercury"
-      >
-        <nuxt-link v-for="menu in menus" :key="menu" :to="menu.link">
-          {{ menu.title }}
-        </nuxt-link>
-      </div>
-    </transition>
   </div>
 </template>
 
