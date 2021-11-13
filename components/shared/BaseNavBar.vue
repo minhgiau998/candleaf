@@ -1,7 +1,164 @@
-<template></template>
+<template>
+  <div>
+    <div
+      class="flex flex-row items-center justify-between border-solid  border-b-1 p-30px border-mercury"
+    >
+      <button @click="this.open" class="block md:hidden">
+        <div class="hamburger" :class="['hamburger', this.active]">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </button>
+      <a href=".">
+        <img src="~/assets/images/logo.png" alt="Candleaf" />
+      </a>
+      <div class="flex flex-row items-center space-x-15px">
+        <img src="~assets/svg/user.svg" />
+        <img src="~assets/svg/cart.svg" />
+      </div>
+    </div>
+    <transition name="slide">
+      <div
+        v-if="this.isOpened"
+        class="flex flex-col py-5 space-y-5 font-normal border-solid  px-30px font-roboto text-24px-28px text-mine-shaft border-b-1 border-mercury"
+      >
+        <nuxt-link v-for="menu in menus" :key="menu" :to="menu.link">
+          {{ menu.title }}
+        </nuxt-link>
+      </div>
+    </transition>
+  </div>
+</template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      isOpened: false,
+      menus: [
+        {
+          title: 'Discovery',
+          link: '/discovery',
+        },
+        {
+          title: 'About',
+          link: '/about',
+        },
+        {
+          title: 'Contact',
+          link: '/contact',
+        },
+      ],
+    }
+  },
+  computed: {
+    active() {
+      return this.isOpened ? 'active' : ''
+    },
+  },
+  methods: {
+    open() {
+      this.isOpened = !this.isOpened
+    },
+  },
+}
 </script>
 
-<style></style>
+<style scoped>
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.slide-enter-active {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-leave-active {
+  -webkit-animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+</style>
