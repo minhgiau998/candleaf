@@ -1,7 +1,13 @@
-<template></template>
+<template>
+  <home-hero-banner></home-hero-banner>
+</template>
 
 <script>
-export default {}
-</script>
+import HomeHeroBanner from '~/components/home/HomeHeroBanner.vue'
 
-<style></style>
+export default {
+  components: {
+    HomeHeroBanner,
+  },
+}
+</script>

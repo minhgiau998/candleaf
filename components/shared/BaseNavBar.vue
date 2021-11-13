@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed w-full">
+  <div class="fixed z-20 w-full" :class="{ 'shadow-lg': !view.atTopOfPage }">
     <!-- Base Navigation Bar For Mobile -->
     <div class="block md:hidden">
       <div
@@ -16,8 +16,12 @@
           <img src="~/assets/images/logo.png" alt="Candleaf" />
         </a>
         <div class="flex flex-row items-center space-x-15px">
-          <img src="~assets/svg/user.svg" />
-          <img src="~assets/svg/cart.svg" />
+          <button>
+            <img src="~assets/svg/user.svg" />
+          </button>
+          <button>
+            <img src="~assets/svg/cart.svg" />
+          </button>
         </div>
       </div>
       <transition name="slide">
@@ -48,8 +52,12 @@
           </nuxt-link>
         </div>
         <div class="flex flex-row items-center space-x-15px">
-          <img src="~assets/svg/user.svg" />
-          <img src="~assets/svg/cart.svg" />
+          <button>
+            <img src="~assets/svg/user.svg" />
+          </button>
+          <button>
+            <img src="~assets/svg/cart.svg" />
+          </button>
         </div>
       </div>
     </div>
@@ -75,6 +83,9 @@ export default {
           link: '/contact',
         },
       ],
+      view: {
+        atTopOfPage: true,
+      },
     }
   },
   computed: {
@@ -82,9 +93,22 @@ export default {
       return this.isOpened ? 'active' : ''
     },
   },
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
   methods: {
     open() {
       this.isOpened = !this.isOpened
+    },
+    handleScroll() {
+      // when the user scrolls, check the pageYOffset
+      if (window.pageYOffset > 0) {
+        // user is scrolled
+        if (this.view.atTopOfPage) this.view.atTopOfPage = false
+      } else {
+        // user is at top of page
+        if (!this.view.atTopOfPage) this.view.atTopOfPage = true
+      }
     },
   },
 }
