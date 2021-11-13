@@ -24,6 +24,9 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      // custom colors
+      mercury: colors.mercury,
+      mine: colors.mine,
     },
     spacing: {
       px: '1px',
@@ -61,6 +64,9 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
+      // custom spacing
+      '15px': '15px',
+      '30px': '30px',
     },
     animation: {
       none: 'none',
@@ -157,6 +163,8 @@ module.exports = {
       2: '2px',
       4: '4px',
       8: '8px',
+      // custom border width
+      1: '1px',
     },
     boxShadow: {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
@@ -279,6 +287,8 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      // custom font family
+      roboto: ["'Roboto', sans-serif"],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -294,6 +304,8 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
+      // custom font size
+      '24px-28px': ['24px', { lineHeight: '28px' }],
     },
     fontWeight: {
       thin: '100',

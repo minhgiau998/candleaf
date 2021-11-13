@@ -290,4 +290,9 @@ module.exports = {
     800: '#1e293b',
     900: '#0f172a',
   },
+  // custom colors
+  mercury: '#E5E5E5',
+  mine: {
+    shaft: '#272727',
+  },
 }
