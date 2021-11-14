@@ -29,6 +29,7 @@ module.exports = {
       mine: colors.mine,
       silver: colors.silver,
       lynch: colors.lynch,
+      alto: colors.alto,
     },
     spacing: {
       px: '1px',
@@ -69,6 +70,7 @@ module.exports = {
       // custom spacing
       '15px': '15px',
       '30px': '30px',
+      '44px': '44px',
       '52px': '52px',
     },
     animation: {
@@ -312,6 +314,7 @@ module.exports = {
       '16px-18px': ['16px', { lineHeight: '18px' }],
       '16px-22px': ['16px', { lineHeight: '22px' }],
       '16px-28px': ['16px', { lineHeight: '28px' }],
+      '20px-24px': ['20px', { lineHeight: '24px' }],
       '24px-28px': ['24px', { lineHeight: '28px' }],
     },
     fontWeight: {
