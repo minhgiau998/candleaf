@@ -27,6 +27,8 @@ module.exports = {
       // custom colors
       mercury: colors.mercury,
       mine: colors.mine,
+      silver: colors.silver,
+      lynch: colors.lynch,
     },
     spacing: {
       px: '1px',
@@ -67,6 +69,7 @@ module.exports = {
       // custom spacing
       '15px': '15px',
       '30px': '30px',
+      '52px': '52px',
     },
     animation: {
       none: 'none',
@@ -307,6 +310,8 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
       // custom font size
       '16px-18px': ['16px', { lineHeight: '18px' }],
+      '16px-22px': ['16px', { lineHeight: '22px' }],
+      '16px-28px': ['16px', { lineHeight: '28px' }],
       '24px-28px': ['24px', { lineHeight: '28px' }],
     },
     fontWeight: {

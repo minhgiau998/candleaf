@@ -295,4 +295,8 @@ module.exports = {
   mine: {
     shaft: '#272727',
   },
+  silver: {
+    tree: '#56B280',
+  },
+  lynch: '#5E6E89',
 }
