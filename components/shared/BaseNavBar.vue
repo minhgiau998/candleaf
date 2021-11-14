@@ -1,5 +1,8 @@
 <template>
-  <div class="fixed z-20 w-full" :class="{ 'shadow-lg': !view.atTopOfPage }">
+  <div
+    class="fixed z-20 w-full bg-white"
+    :class="{ 'shadow-lg': !view.atTopOfPage }"
+  >
     <!-- Base Navigation Bar For Mobile -->
     <div class="block md:hidden">
       <div
