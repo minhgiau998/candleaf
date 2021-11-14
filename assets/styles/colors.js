@@ -300,4 +300,7 @@ module.exports = {
   },
   lynch: '#5E6E89',
   alto: '#D6D6D6',
+  athens: {
+    gray: '#F7F8FA',
+  },
 }
