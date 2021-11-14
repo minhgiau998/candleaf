@@ -299,4 +299,5 @@ module.exports = {
     tree: '#56B280',
   },
   lynch: '#5E6E89',
+  alto: '#D6D6D6',
 }
