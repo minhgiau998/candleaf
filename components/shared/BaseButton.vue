@@ -1,5 +1,5 @@
 <template>
-  <button :class="[this.isDefault, this.isColor]" :type="type">
+  <button :class="[isDefault, isColor]" :type="isType" @click="onClick">
     <slot />
   </button>
 </template>
@@ -31,6 +31,23 @@ export default {
     },
     isDefault() {
       return 'flex items-center justify-center py-2 font-normal rounded  px-44px font-roboto border-1 text-20px-24px transition duration-500 ease'
+    },
+    isType() {
+      switch (this.type) {
+        case 'submit':
+          return 'submit'
+          break
+        case 'reset':
+          return 'reset'
+          break
+        default:
+          return 'button'
+      }
+    },
+  },
+  methods: {
+    onClick() {
+      this.$emit('click')
     },
   },
 }
