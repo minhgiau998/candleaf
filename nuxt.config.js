@@ -30,7 +30,10 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    // Repositories: https://viblo.asia/p/quan-ly-va-su-dung-api-trong-nuxt-bang-cach-su-dung-repository-pattern-6J3ZgNRBKmB
+    { src: '~/plugins/repositories.js' },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
@@ -58,10 +61,14 @@ export default {
     '@nuxtjs/axios',
     // https://www.npmjs.com/package/nuxt-vue-multiselect
     'nuxt-vue-multiselect',
+    // https://www.npmjs.com/package/@nuxtjs/dotenv
+    '@nuxtjs/dotenv',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: process.env.API_ENDPOINT,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
