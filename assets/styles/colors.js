@@ -303,4 +303,8 @@ module.exports = {
   athens: {
     gray: '#F7F8FA',
   },
+  downriver: '#0B254B',
+  cloud: {
+    burst: '#1D293F',
+  },
 }

@@ -1,13 +1,10 @@
 <template>
-  <home-hero-banner></home-hero-banner>
+  <div>
+    <home-hero-banner></home-hero-banner>
+    <home-products></home-products>
+  </div>
 </template>
 
 <script>
-import HomeHeroBanner from '~/components/home/HomeHeroBanner.vue'
-
-export default {
-  components: {
-    HomeHeroBanner,
-  },
-}
+export default {}
 </script>
