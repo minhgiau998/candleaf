@@ -3,7 +3,7 @@
     <div
       class="flex items-center justify-center h-screen overflow-hidden pt-95px"
       :style="{
-        background: `url(${homeHeroBannerBackground}) no-repeat center center fixed`,
+        background: `url(${homeHeroBackground}) no-repeat center center fixed`,
         backgroundSize: 'cover',
       }"
     >
@@ -30,12 +30,12 @@
 </template>
 
 <script>
-import HomeHeroBannerBackground from '~/assets/images/home-hero-banner-background.png'
+import HomeHeroBackground from '~/assets/images/home-hero-background.png'
 
 export default {
   data() {
     return {
-      homeHeroBannerBackground: HomeHeroBannerBackground,
+      homeHeroBackground: HomeHeroBackground,
       hero: {
         title: 'The nature candle',
         description:
