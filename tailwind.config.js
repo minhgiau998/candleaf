@@ -31,6 +31,8 @@ module.exports = {
       lynch: colors.lynch,
       alto: colors.alto,
       athens: colors.athens,
+      downriver: colors.downriver,
+      cloud: colors.cloud,
     },
     spacing: {
       px: '1px',
@@ -74,7 +76,10 @@ module.exports = {
       '30px': '30px',
       '44px': '44px',
       '52px': '52px',
+      '60px': '60px',
       '95px': '95px',
+      '98px': '98px',
+      '230px': '230px',
     },
     animation: {
       none: 'none',
@@ -318,9 +323,12 @@ module.exports = {
       '16px-22px': ['16px', { lineHeight: '22px' }],
       '16px-28px': ['16px', { lineHeight: '28px' }],
       '18px-20px': ['18px', { lineHeight: '20px' }],
+      '18px-28px': ['18px', { lineHeight: '28px' }],
       '20px-24px': ['20px', { lineHeight: '24px' }],
+      '20px-28px': ['20px', { lineHeight: '28px' }],
       '24px-28px': ['24px', { lineHeight: '28px' }],
       '40px-48px': ['40px', { lineHeight: '48px' }],
+      '40px-58px': ['40px', { lineHeight: '58px' }],
     },
     fontWeight: {
       thin: '100',
