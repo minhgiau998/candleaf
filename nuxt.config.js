@@ -82,4 +82,10 @@ export default {
       // svg-sprite-loader options
     },
   },
+
+  // Config Server: https://nuxtjs.org/docs/features/configuration/#edit-host-and-port
+  server: {
+    host: '0.0.0.0', // default: localhost
+    port: 8000, // default: 3000
+  },
 }
