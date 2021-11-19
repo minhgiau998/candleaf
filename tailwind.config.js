@@ -33,6 +33,7 @@ module.exports = {
       athens: colors.athens,
       downriver: colors.downriver,
       cloud: colors.cloud,
+      ebony: colors.ebony,
     },
     spacing: {
       px: '1px',

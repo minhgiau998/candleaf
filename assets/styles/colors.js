@@ -307,4 +307,7 @@ module.exports = {
   cloud: {
     burst: '#1D293F',
   },
+  ebony: {
+    clay: '#1D252C',
+  },
 }
