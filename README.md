@@ -58,6 +58,10 @@ More information about the usage of this directory in [the documentation](https:
 
 This directory contains your static files. Each file inside this directory is mapped to `/`.
 
+### `endpoint`
+
+https://61931ab3d3ae6d0017da837f.mockapi.io/api/v1
+
 Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
