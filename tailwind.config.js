@@ -72,16 +72,22 @@ module.exports = {
       80: '20rem',
       96: '24rem',
       // custom spacing
+      '6px': '6px',
       '10px': '10px',
       '15px': '15px',
+      '22px': '22px',
+      '27px': '27px',
       '30px': '30px',
       '44px': '44px',
       '52px': '52px',
       '60px': '60px',
       '68px': '68px',
+      '84px': '84px',
+      '90px': '90px',
       '95px': '95px',
       '98px': '98px',
       '230px': '230px',
+      '268px': '268px',
     },
     animation: {
       none: 'none',
@@ -171,6 +177,8 @@ module.exports = {
       '2xl': '1rem',
       '3xl': '1.5rem',
       full: '9999px',
+      // custom border radius
+      '6px': '6px',
     },
     borderWidth: {
       DEFAULT: '1px',
@@ -328,6 +336,7 @@ module.exports = {
       '18px-28px': ['18px', { lineHeight: '28px' }],
       '20px-24px': ['20px', { lineHeight: '24px' }],
       '20px-28px': ['20px', { lineHeight: '28px' }],
+      '22px-29px': ['22px', { lineHeight: '29px' }],
       '24px-28px': ['24px', { lineHeight: '28px' }],
       '40px-48px': ['40px', { lineHeight: '48px' }],
       '40px-58px': ['40px', { lineHeight: '58px' }],
@@ -534,6 +543,9 @@ module.exports = {
       wide: '0.025em',
       wider: '0.05em',
       widest: '0.1em',
+      // custom letter spacing
+      '-09px': '-0.9px',
+      '01px': '0.1px',
     },
     lineHeight: {
       none: '1',
@@ -596,6 +608,8 @@ module.exports = {
       full: '100%',
       min: 'min-content',
       max: 'max-content',
+      // custom min width
+      '268px': '268px',
     },
     objectPosition: {
       bottom: 'bottom',
