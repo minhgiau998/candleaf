@@ -4,6 +4,7 @@
     <home-products></home-products>
     <home-benefits></home-benefits>
     <home-testimonial></home-testimonial>
+    <home-products-popular></home-products-popular>
   </div>
 </template>
 
