@@ -3,6 +3,7 @@
     <home-hero></home-hero>
     <home-products></home-products>
     <home-benefits></home-benefits>
+    <home-testimonial></home-testimonial>
   </div>
 </template>
 

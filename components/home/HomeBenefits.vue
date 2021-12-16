@@ -6,12 +6,22 @@
       <div class="flex flex-col md:hidden">
         <div>
           <p
-            class="font-medium text-center  font-poppins text-40px-48px text-ebony-clay"
+            class="
+              font-medium
+              text-center
+              font-poppins
+              text-40px-48px text-ebony-clay
+            "
           >
             {{ benefitObject.title }}
           </p>
           <p
-            class="font-normal text-center  font-poppins text-16px-22px text-silver-tree"
+            class="
+              font-normal
+              text-center
+              font-poppins
+              text-16px-22px text-silver-tree
+            "
           >
             {{ benefitObject.description }}
           </p>
@@ -40,7 +50,11 @@
             {{ benefitObject.title }}
           </p>
           <p
-            class="font-normal  font-poppins text-16px-22px text-silver-tree mt-15px"
+            class="
+              font-normal font-poppins
+              text-16px-22px text-silver-tree
+              mt-15px
+            "
           >
             {{ benefitObject.description }}
           </p>
@@ -85,7 +99,6 @@ export default {
   },
   async mounted() {
     await this.getBenefit()
-    console.log(this.benefitObject)
   },
   methods: {
     ...mapActions('benefit', ['getBenefit']),

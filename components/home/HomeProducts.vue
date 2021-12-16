@@ -2,12 +2,23 @@
   <div class="flex items-center justify-center bg-white">
     <div class="w-full px-0 max-w-7xl py-95px md:px-30px mx-15px md:mx-0">
       <p
-        class="font-medium text-center  font-poppins text-40px-58px text-downriver"
+        class="
+          font-medium
+          text-center
+          font-poppins
+          text-40px-58px text-downriver
+        "
       >
         Products
       </p>
       <p
-        class="font-medium text-center  mt-15px font-poppins text-18px-28px text-lynch"
+        class="
+          font-medium
+          text-center
+          mt-15px
+          font-poppins
+          text-18px-28px text-lynch
+        "
       >
         Order it for you or for your beloved ones
       </p>
@@ -31,7 +42,6 @@ export default {
   },
   async mounted() {
     await this.getProducts()
-    console.log(this.productsList)
   },
   methods: {
     ...mapActions('products', ['getProducts']),
