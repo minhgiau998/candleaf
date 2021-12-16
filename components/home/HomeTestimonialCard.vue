@@ -1,6 +1,15 @@
 <template>
   <div
-    class="bg-white py-30px px-15px rounded-6px md:w-1/3 w-full"
+    class="
+      bg-white
+      py-30px
+      px-15px
+      rounded-6px
+      md:w-1/3
+      w-full
+      min-w-268px
+      md:min-w-0
+    "
     style="box-shadow: 0px 4px 24px rgba(139, 167, 178, 0.16)"
   >
     <img

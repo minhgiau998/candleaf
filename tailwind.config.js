@@ -87,6 +87,7 @@ module.exports = {
       '95px': '95px',
       '98px': '98px',
       '230px': '230px',
+      '268px': '268px',
     },
     animation: {
       none: 'none',
@@ -607,6 +608,8 @@ module.exports = {
       full: '100%',
       min: 'min-content',
       max: 'max-content',
+      // custom min width
+      '268px': '268px',
     },
     objectPosition: {
       bottom: 'bottom',

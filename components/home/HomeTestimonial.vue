@@ -1,6 +1,6 @@
 <template>
   <div class="bg-silver-tree bg-opacity-10 flex items-center justify-center">
-    <div class="w-full px-0 max-w-7xl md:px-30px py-90px md:mx-0 mx-15px">
+    <div class="w-full px-15px max-w-7xl md:px-30px py-90px">
       <h2
         class="
           font-medium
@@ -24,7 +24,19 @@
       >
         {{ testimonialObject.description }}
       </p>
-      <div class="mt-27px flex flex-nowrap space-x-30px">
+      <div
+        class="
+          mt-27px
+          flex flex-nowrap
+          overflow-scroll
+          md:overflow-hidden
+          space-x-30px
+          -mx-15px
+          md:mx-0
+          px-15px
+          md:px-0
+        "
+      >
         <home-testimonial-card
           v-for="testimonial in testimonialObject.testimonials"
           :key="testimonial.id"
