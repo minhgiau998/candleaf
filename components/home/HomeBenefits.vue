@@ -1,8 +1,6 @@
 <template>
   <div class="flex items-center justify-center bg-athens-gray">
-    <div
-      class="w-full px-0 max-w-7xl md:py-40 py-28 md:px-30px mx-15px md:mx-0"
-    >
+    <div class="w-full px-15px max-w-7xl md:px-30px md:py-40 py-28">
       <div class="flex flex-col md:hidden">
         <div>
           <p

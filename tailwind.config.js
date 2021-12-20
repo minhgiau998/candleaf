@@ -34,6 +34,9 @@ module.exports = {
       downriver: colors.downriver,
       cloud: colors.cloud,
       ebony: colors.ebony,
+      platinum: colors.platinum,
+      dark: colors.dark,
+      dolphin: colors.dolphin,
     },
     spacing: {
       px: '1px',
@@ -75,9 +78,13 @@ module.exports = {
       '6px': '6px',
       '10px': '10px',
       '15px': '15px',
+      '18px': '18px',
+      '21px': '21px',
       '22px': '22px',
+      '25px': '25px',
       '27px': '27px',
       '30px': '30px',
+      '35px': '35px',
       '44px': '44px',
       '52px': '52px',
       '60px': '60px',
@@ -88,6 +95,7 @@ module.exports = {
       '98px': '98px',
       '230px': '230px',
       '268px': '268px',
+      '277px': '277px',
     },
     animation: {
       none: 'none',
@@ -179,6 +187,7 @@ module.exports = {
       full: '9999px',
       // custom border radius
       '6px': '6px',
+      '7px': '7px',
     },
     borderWidth: {
       DEFAULT: '1px',
@@ -338,6 +347,7 @@ module.exports = {
       '20px-28px': ['20px', { lineHeight: '28px' }],
       '22px-29px': ['22px', { lineHeight: '29px' }],
       '24px-28px': ['24px', { lineHeight: '28px' }],
+      '26px-58px': ['26px', { lineHeight: '58px' }],
       '40px-48px': ['40px', { lineHeight: '48px' }],
       '40px-58px': ['40px', { lineHeight: '58px' }],
     },

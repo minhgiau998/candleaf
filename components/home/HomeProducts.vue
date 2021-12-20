@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center bg-white">
-    <div class="w-full px-0 max-w-7xl py-95px md:px-30px mx-15px md:mx-0">
+    <div class="w-full px-15px max-w-7xl md:px-30px py-95px">
       <p
         class="
           font-medium
