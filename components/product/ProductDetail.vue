@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col mt-15px md:flex-row">
+  <div class="flex flex-col w-full mt-15px md:w-1/2">
+    <product-title class="hidden md:block" :name="product.name"></product-title>
     <div class="flex flex-row items-center justify-between">
       <p
         v-if="formatPrice"
@@ -75,15 +76,7 @@
         </span>
       </p>
     </div>
-    <div class="font-medium mt-35px font-poppins text-20px-24px -tracking-09px">
-      <p class="text-center text-mine-shaft">
-        All hand-made with natural soy wax, Candleaf is made for your pleasure
-        moments.
-      </p>
-      <a class="block mx-auto my-0 mt-5 text-center text-silver-tree" href="">
-        🚚 FREE SHIPPING
-      </a>
-    </div>
+    <product-slogan class="block md:hidden"></product-slogan>
   </div>
 </template>
 
