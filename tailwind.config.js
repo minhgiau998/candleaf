@@ -96,6 +96,7 @@ module.exports = {
       '230px': '230px',
       '268px': '268px',
       '277px': '277px',
+      '433px': '433px',
     },
     animation: {
       none: 'none',

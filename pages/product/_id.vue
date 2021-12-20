@@ -1,11 +1,13 @@
 <template>
   <div class="flex items-center justify-center bg-white py-95px">
     <div class="w-full px-15px max-w-7xl md:px-30px">
-      <product-media
-        :name="productDetail.name"
-        :image="productDetail.image"
-      ></product-media>
-      <product-detail :product="productDetail"></product-detail>
+      <div class="flex flex-col md:items-center md:flex-row md:space-x-30px">
+        <product-media
+          :name="productDetail.name"
+          :image="productDetail.image"
+        ></product-media>
+        <product-detail :product="productDetail"></product-detail>
+      </div>
     </div>
   </div>
 </template>

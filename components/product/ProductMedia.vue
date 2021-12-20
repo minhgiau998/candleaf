@@ -1,24 +1,12 @@
 <template>
-  <div>
-    <h1
-      class="
-        font-poppins font-medium
-        text-26px-58px
-        flex
-        items-center
-        -tracking-09px
-        text-mine-shaft
-        mt-21px
-        md:hidden
-      "
-    >
-      {{ name }}
-    </h1>
+  <div class="w-full md:w-1/2">
+    <product-title class="block md:hidden" :name="name"></product-title>
     <img
-      class="h-277px w-full object-cover object-center mt-5"
+      class="object-cover object-center w-full mt-5 h-277px md:h-433px"
       :src="image"
       :alt="name"
     />
+    <product-slogan class="hidden md:block"></product-slogan>
   </div>
 </template>
 
