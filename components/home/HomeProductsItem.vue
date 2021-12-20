@@ -6,9 +6,12 @@
         class="object-cover object-center w-full md:h-230px h-98px"
       />
       <div class="flex flex-row items-center justify-between px-6 py-10px">
-        <p class="font-medium font-poppins text-16px-28px text-cloud-burst">
+        <nuxt-link
+          class="font-medium font-poppins text-16px-28px text-cloud-burst"
+          :to="`/product/${product.id}`"
+        >
           {{ product.name }}
-        </p>
+        </nuxt-link>
         <p class="font-medium font-roboto text-20px-28px text-silver-tree">
           {{ productPrice }}
         </p>

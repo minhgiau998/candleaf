@@ -310,4 +310,11 @@ module.exports = {
   ebony: {
     clay: '#1D252C',
   },
+  platinum: '#E6E6E6',
+  dark: {
+    gunmetal: '#2C241D',
+  },
+  dolphin: {
+    gray: '#849A8E',
+  },
 }
