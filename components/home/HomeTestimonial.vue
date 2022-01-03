@@ -56,7 +56,6 @@ export default {
   },
   async mounted() {
     await this.getTestimonial()
-    console.log(this.testimonialObject)
   },
   methods: {
     ...mapActions('testimonial', ['getTestimonial']),

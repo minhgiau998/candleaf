@@ -4,7 +4,12 @@
     <div class="flex flex-row items-center justify-between">
       <p
         v-if="formatPrice"
-        class="font-semibold  font-poppins text-26px-58px -tracking-09px text-silver-tree"
+        class="
+          font-semibold font-poppins
+          text-26px-58px
+          -tracking-09px
+          text-silver-tree
+        "
       >
         {{ formatPrice }}
       </p>
@@ -43,7 +48,13 @@
       <p class="ml-10px">+ Add to cart</p>
     </base-button>
     <div
-      class="p-6 space-y-2 border-solid  border-1 border-platinum rounded-7px mt-22px"
+      class="
+        p-6
+        space-y-2
+        border-solid border-1 border-platinum
+        rounded-7px
+        mt-22px
+      "
     >
       <p class="font-normal font-poppins text-16px-18px text-dark-gunmetal">
         Wax:
@@ -127,6 +138,14 @@ export default {
   computed: {
     formatPrice() {
       return '$ ' + this.product.price
+    },
+  },
+  watch: {
+    quantity(value) {
+      if (process.client) {
+        if (localStorage.getItem('cart') === null) {
+        }
+      }
     },
   },
 }
