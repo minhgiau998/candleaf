@@ -62,6 +62,10 @@ export default {
       path: '~/components/product/',
       prefix: 'product',
     },
+    {
+      path: '~/components/cart/',
+      prefix: 'cart',
+    },
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
